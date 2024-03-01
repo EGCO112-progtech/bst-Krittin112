@@ -126,15 +126,14 @@ void rotateOrder( TreeNodePtr treePtr, int l)
 
    if(treePtr != NULL)
    {
-      rotateOrder(treePtr->rightPtr,++l);
+      rotateOrder(treePtr->rightPtr,l+1);
 
-      for(i=1; i<l; i++)
+      for(i=0; i<l; i++)
       {
-         printf("    ");
+         printf("   ");
       }
-      printf("%-3d\n",treePtr->data);
-      l--;
-      rotateOrder(treePtr->leftPtr,++l);
+      printf("%3d\n",treePtr->data);
+      rotateOrder(treePtr->leftPtr,l+1);
 
    }
 }
