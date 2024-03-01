@@ -130,7 +130,7 @@ void rotateOrder( TreeNodePtr treePtr, int l)
 
       for(i=1; i<l; i++)
       {
-         printf("       ");
+         printf("    ");
       }
       printf("%-3d\n",treePtr->data);
       l--;
